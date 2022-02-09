@@ -15,7 +15,6 @@ body{
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background-image: linear-gradient(45deg, #2a36a1, #45bd0e);
     background-size: 150%;
     animation: background 10s ease infinite;
 }
@@ -35,7 +34,6 @@ body{
     text-shadow: 0 0 1vmax black;
     font-size: 2vmax;
     color: white;
-    font-family: milk;
 }
 
 .small-text{
@@ -50,9 +48,4 @@ body{
 @keyframes moveParalax {
     0% { transform: rotate(0deg) translateX(2vmax) rotate(0deg); }
     100% { transform: rotate(360deg) translateX(2vmax) rotate(-360deg); }  
-}
-
-@font-face {
-    font-family: 'milk';
-    src: url('milk.ttf');
 }
