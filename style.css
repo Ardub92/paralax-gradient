@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body, html, p, a {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(45deg, #2a36a1, #45bd0e);
+    background-size: 150%;
+    animation: background 10s ease infinite;
+}
+
+.centered-image{ 
+    width: 25vmax;
+    height: 25vmax;
+}
+
+@keyframes background {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; } 
+    100% { background-position: 0% 0%; } 
+}
+
+.date{
+    text-shadow: 0 0 1vmax black;
+    font-size: 2vmax;
+    color: white;
+    font-family: milk;
+}
+
+.small-text{
+    font-size: 1vmax;
+    text-shadow: 0 0 .5vmax black;
+}
+
+.rotating{
+    animation: moveParalax 5s linear infinite;
+}
+
+@keyframes moveParalax {
+    0% { transform: rotate(0deg) translateX(2vmax) rotate(0deg); }
+    100% { transform: rotate(360deg) translateX(2vmax) rotate(-360deg); }  
+}
+
+@font-face {
+    font-family: 'milk';
+    src: url('milk.ttf');
+}
